@@ -1,58 +1,49 @@
-.contact-title {
+.page-contact {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.contact-title {
+    width: 80vw;
+    margin-bottom: 10vh;
     justify-content: center;
-    margin-bottom: 2vh;
+}
+
+.contact-title > .underline {
+    width: 20vw !important;
 }
 
 .contact-box {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-
-    box-shadow: 2px 2px 4px gray ;
-    border-radius: 15px;
-    padding: 1vh;
+    margin-bottom: 5vh;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
-    gap: 5px;
-}
-
-.contact-form input, textarea {
-    border-radius: 5px;
+    gap: 10px;
+    margin-bottom: 5vh;
 }
 
 .contact-form > textarea {
     resize: vertical;
-    height: 250px;
-} 
-
-.contact-title > .underline {
-    width: 30%;
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .coordonnees {
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    gap: 0px;
+    gap: 10px;
+    margin-bottom: 5vh;
+    text-align: start;
 }
 
-.coordonnees > div {
-    display: flex;
-    flex-direction: row;
-}
-
-img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.google-map {
-    margin: 10px;
+.underline {
+    width: 100% !important;
 }

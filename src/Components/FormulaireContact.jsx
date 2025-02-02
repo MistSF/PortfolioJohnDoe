@@ -1,6 +1,6 @@
 export default function FormulaireContact() {
     return (
-        <div className="col-5">
+        <div className="col-md-5 col-xs-12">
             <h2>Formulaire de contact</h2>
             <form className="contact-form">
                 <input type="text" placeholder="Votre nom" />

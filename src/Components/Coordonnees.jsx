@@ -23,25 +23,14 @@ export default function Coordonnees() {
     const { coordonnees } = useContext(MyContext)
     
     return (
-        <div  className="col-5 coordonnees">
+        <div  className="col-md-5 col-xs-12 coordonnees">
             <h2>Mes Coordonnées</h2>
+            <div className="bg-primary underline" />
             <h3>John Doe</h3>
-            <div>
-                <img src={mapIcon} alt="icon-adresse" />
-                <p>{coordonnees.adresse}</p>
-            </div>
-            <div>
-                <img src={geoIcon} alt="icon-ville" />
-                <p>{coordonnees.codePostal} {coordonnees.ville}, {coordonnees.pays}</p>
-            </div>
-            <div>
-                <img src={phoneIcon} alt="icon-telephone" />
-                <p>{coordonnees.telephone}</p>
-            </div>
-            <div>
-                <img src={mailIcon} alt="icon-mail" />
-                <p>{coordonnees.email}</p>
-            </div>
+            <p><img src={mapIcon} alt="icon-adresse" /> {coordonnees.adresse}</p>
+            <p><img src={geoIcon} alt="icon-ville" /> {coordonnees.codePostal} {coordonnees.ville}, {coordonnees.pays}</p>
+            <p><img src={phoneIcon} alt="icon-telephone" /> {coordonnees.telephone}</p>
+            <p><img src={mailIcon} alt="icon-mail" /> {coordonnees.email}</p>
             <LoadScript className="google-map" googleMapsApiKey={import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY}>
                 <GoogleMap
                     mapContainerStyle={containerStyle}
