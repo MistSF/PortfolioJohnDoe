@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { MyContext } from "./MyProvider"
+import "../CSS/Footer.css"
 
 import github from "../images/icon/github.svg"
 import twitter from "../images/icon/twitter-x.svg"
@@ -10,12 +11,14 @@ export default function Footer() {
 
     return (
         <footer className="App-footer">
-            <div className="footer-contact col-3">
+            <div className="col-md-3 col-xs-12">
                 <h3>John Doe</h3>
-                <p>{coordonnees.adresse}</p>
-                <p>{coordonnees.codePostal} {coordonnees.ville}, {coordonnees.pays}</p>
-                <p>{coordonnees.telephone}</p>
-                <p>{coordonnees.email}</p>
+                <ul>
+                    <li>{coordonnees.adresse}</li>
+                    <li>{coordonnees.codePostal} {coordonnees.ville}, {coordonnees.pays}</li>
+                    <li>{coordonnees.telephone}</li>
+                    <li>{coordonnees.email}</li>
+                </ul>
                 <div className="footer-social">
                     <a href="https://www.Github.com/example" target="_blank" rel="Github">
                         <img src={github} alt="Github" />
@@ -28,7 +31,7 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
-            <div className="footer-liens col-3">
+            <div className="col-md-3 col-xs-12">
                 <h3>Liens utiles</h3>
                 <ul>
                     <li><a href="/">Accueil</a></li>
@@ -38,7 +41,7 @@ export default function Footer() {
                     <li><a href="/mentions-legales">Mentions légales</a></li>
                 </ul>
             </div>
-            <div className="footer-realisation col-3">
+            <div className="col-md-3 col-xs-12">
                 <h3>Mes dernières réalisations</h3>
                 <ul>
                     <li>Fresh Food</li>
