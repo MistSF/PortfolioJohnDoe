@@ -3,7 +3,7 @@ import {ReactSVG} from 'react-svg';
 export default function BlocServices(props) {
     const { service } = props;
     return (
-        <div className="col-3 bloc-service">
+        <div className="col-md-3 col-xs-12 bloc-service">
             <ReactSVG 
                 src={service.icon} 
                 beforeInjection={(svg) => {

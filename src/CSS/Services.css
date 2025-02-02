@@ -21,7 +21,7 @@
 .bloc-service {
     border: 1px solid lightgray;
     border-radius: 10px;
-    margin-bottom: 2vh;
+    margin: 2vh;
 }
 
 .service-icon {
