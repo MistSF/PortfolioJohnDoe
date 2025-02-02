@@ -31,6 +31,6 @@ export default function Portfolio() {
                     <Realisation real={realisation}  />)
                 })}
             </div>
-        </div> 
+        </div>  
     );
 }
