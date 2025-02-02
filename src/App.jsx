@@ -15,7 +15,6 @@ function App() {
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" />
         <div className='main-content'>
           <Router>
-            <Header className="row" />
             <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route path="/contact" element={<Contact />} />
@@ -25,7 +24,6 @@ function App() {
             </Routes>
           </Router>
         </div>
-        <Footer className="row" />
     </div>
   );
 }
