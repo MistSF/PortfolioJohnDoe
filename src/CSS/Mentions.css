@@ -1,0 +1,34 @@
+.page-mentions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-mentions .underline {
+    width: 30%;
+}
+
+.mention-box {
+    border: .5px solid lightgray;
+    border-radius: 15px;
+}
+
+.mention {
+    width: 80vw;
+    border: 1px lightgray solid;
+}
+
+.select {
+    background-color: #a7d6f3 !important;
+}
+
+.hide {
+    display: none;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 1vw;
+}

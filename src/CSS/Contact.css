@@ -1,0 +1,58 @@
+.contact-title {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    box-shadow: 2px 2px 4px gray ;
+    border-radius: 15px;
+    padding: 1vh;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.contact-form input, textarea {
+    border-radius: 5px;
+}
+
+.contact-form > textarea {
+    resize: vertical;
+    height: 250px;
+} 
+
+.contact-title > .underline {
+    width: 30%;
+}
+
+.coordonnees {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    gap: 0px;
+}
+
+.coordonnees > div {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.google-map {
+    margin: 10px;
+}

@@ -1,0 +1,39 @@
+.services {
+    text-align: center;
+}
+
+.bandeau {
+    min-height: 30vh;
+    background-image: url("../images/banner.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 2vh;
+}
+
+.services-blocs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bloc-service {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    margin: 50px;
+}
+
+.services > div {
+    justify-content: center;
+}
+
+.services > div > .underline {
+    width: 30%;
+}
