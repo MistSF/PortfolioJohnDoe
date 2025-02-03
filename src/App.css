@@ -3,6 +3,16 @@ html, body {
   font-weight: 400;
 }
 
+body.modal-open {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+body.modal-open .modal, 
+body.modal-open .modal-content{
+  pointer-events: all;
+}
+
 h1, h2, h3, h4, h5, h6, strong {
   font-weight: 600;
 }
