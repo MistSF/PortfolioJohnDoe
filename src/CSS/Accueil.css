@@ -49,3 +49,7 @@ article {
 .underline, .progress{
     width: 100% !important;
 }
+
+.Section-2 > article > img {
+    width: 100% !important;
+}

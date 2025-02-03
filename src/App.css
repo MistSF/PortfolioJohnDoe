@@ -15,61 +15,15 @@ h1, h2, h3, h4, h5, h6, strong {
   flex-direction: column;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 5vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
-}
-
-.Nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  color: white;
-  list-style: none;
-  text-transform: uppercase;
-  text-decoration: solid;
-  gap: 10px
-}
-
-.Nav > * {
-  text-decoration: solid;
-  color: white;
-  font-size: .6em;
-}
-
-.header-title {
-  font-size: 1em;
-}
-
-.active {
-  font-weight: bold;
-  text-decoration: underline;
 }
 
 @keyframes App-logo-spin {

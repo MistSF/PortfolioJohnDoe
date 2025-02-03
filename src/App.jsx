@@ -15,6 +15,7 @@ function App() {
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" />
         <div className='main-content'>
           <Router>
+            <Header />
             <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route path="/contact" element={<Contact />} />

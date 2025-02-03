@@ -1,7 +1,37 @@
-.burger-menu {
-    position: relative;
+.App-header {
+    background-color: #282c34;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
-
+  
+.App-header.open {
+    min-height: 40vh;
+}
+  
+.App-header > h1 {
+    text-align: start;
+    margin-left: 2vw;
+    font-size: 1.5em;
+}
+  
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+  
+.burger-menu {
+    justify-items: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
+    margin-right: 2vw;
+}
+  
 .burger-icon {
     width: 30px;
     height: 25px;
@@ -10,7 +40,7 @@
     justify-content: space-between;
     cursor: pointer;
 }
-
+  
 .burger-icon span {
     display: block;
     width: 100%;
@@ -18,51 +48,35 @@
     background-color: #333;
     transition: all 0.3s;
 }
-
+  
 .burger-icon.open span:nth-child(1) {
     transform: translateY(10.5px) rotate(45deg);
 }
-
+  
 .burger-icon.open span:nth-child(2) {
     opacity: 0;
 }
-
+  
 .burger-icon.open span:nth-child(3) {
     transform: translateY(-10.5px) rotate(-45deg);
 }
 
-.Nav {
-    min-width: 200px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border: red solid 1px;
-}
-
+  
 .Nav.open {
     display: flex;
-    height: fit-content;
+    max-height: 300px;
 }
-
+  
 .Nav a {
     padding: 10px 20px;
     text-decoration: none;
     color: #333;
     width: 100%;
     text-align: center;
-    transition: background-color 0.3s;
 }
-
-/* Styles spécifiques aux écrans de bureau */
+ 
+  
+/* Media Queries */
 @media (min-width: 768px) {
     .burger-icon {
         display: none;
@@ -81,5 +95,16 @@
         width: auto;
         text-align: left;
         padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        transition: max-height 0.3s;
+        max-height: 0;
+        overflow: hidden;
     }
 }
